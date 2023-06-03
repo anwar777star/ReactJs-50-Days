@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Home",
+        "url": "/"
+    },
+    {
+        "label": "Blog",
+        "url": "/blog"
+    },
+    {
+        "label": "Software Engineering",
+        "url": "/software-engineering"
+    },
+    {
+        "label" : "Web Development",
+        "url" : "/web-development"
+    },
+    {
+        "label" : "Robotics",
+        "url" : "/robotics"
+    }
+]
