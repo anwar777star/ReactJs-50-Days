@@ -12,22 +12,26 @@ import Contact from "./components/Contact/Contact";
 
 
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 const App = () => {
   const design = (
-    <div class = "page">
-      <div class = "container">
+    
        <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/images" element={<Images />} />
-          <Route exact path="/videos" element={<Videos />} />
-          <Route exact path="/about-us" element={<About />} />
-          <Route exact path="/contact-us" element={<Contact />} />
-        </Routes>
+        <Navbar />
+        <div className = "page">
+          <div className = "container">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/images" element={<Images />} />
+                <Route exact path="/videos" element={<Videos />} />
+                <Route exact path="/about-us" element={<About />} />
+                <Route exact path="/contact-us" element={<Contact />} />
+              </Routes>
+          </div>
+        </div>
+        <Footer/>
        </BrowserRouter>
-
-      </div>
-    </div>
   );
   return design;
 }
